@@ -31,14 +31,14 @@ const addImagesToGallery = images.forEach((image) => {
   galleryUl.appendChild(galleryLi);
 });
 
-addImagesToGallery();
-
-// InnerAdjacentHTML
+// insertAdjacentHTML
 // const addImagesToGallery = images.forEach(image => {
 //   galleryUl.insertAdjacentHTML(
 //     'afterbegin',
 //     `<li><img src = "${image.url}" alt = "${image.alt}"  width = "360" height = "200" /></li>`,
 //   );
 // });
+
+addImagesToGallery();
 
 
