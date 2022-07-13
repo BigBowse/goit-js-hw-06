@@ -35,9 +35,9 @@ addImagesToGallery();
 
 // InnerAdjacentHTML
 // const addImagesToGallery = images.forEach(image => {
-//   ulEl.insertAdjacentHTML(
+//   galleryUl.insertAdjacentHTML(
 //     'afterbegin',
-//     `<li><img src = "${image.url}" alt = "${image.alt}"  width = "150" height = "100" /></li>`,
+//     `<li><img src = "${image.url}" alt = "${image.alt}"  width = "360" height = "200" /></li>`,
 //   );
 // });
 
