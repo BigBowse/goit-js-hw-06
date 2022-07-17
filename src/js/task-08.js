@@ -1,5 +1,4 @@
 const form = document.querySelector('form.login-form');
-const submitBtn = form.lastElementChild;
 
 form.addEventListener('submit', onFormSubmit);
 
@@ -19,16 +18,15 @@ function onFormSubmit(event) {
         window.alert('Please, fill in all the necessary fields');
     }
 
-    console.log(formData);
-    form.reset();
-    
-
-    // const formData = new FormData(event.currentTarget);
+     // const formData = new FormData(event.currentTarget);
 
     // formData.forEach((value, name) => {
     //     console.log('Name', name);
     //     console.log('Value', value);
     // })
+
+    console.log(formData);
+    form.reset();
 }
 
 
