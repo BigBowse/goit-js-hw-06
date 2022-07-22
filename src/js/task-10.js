@@ -7,8 +7,6 @@ const bgColor = getRandomHexColor;
 const createBtnEl = document.querySelector('[data-create]');
 const destroyBtnEl = document.querySelector('[data-destroy]');
 const boxes = document.getElementById('boxes');
-createBtnEl.addEventListener('click', getAmount);
-destroyBtnEl.addEventListener('click', destroyBoxes);
 
 function getAmount() {
   const amount = +document.querySelector("#controls input").value;
@@ -30,5 +28,8 @@ function createBoxes(amount) {
 function destroyBoxes() {
   boxes.innerHTML = "";
 }
+
+createBtnEl.addEventListener('click', getAmount);
+destroyBtnEl.addEventListener('click', destroyBoxes);
 
 
