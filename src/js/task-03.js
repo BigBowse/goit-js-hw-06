@@ -13,31 +13,13 @@ const images = [
   },
 ];
 
-// const addImagesToGallery = images.forEach((image) => {
-//   const galleryUl = document.querySelector('ul.gallery');
-//   galleryUl.style.display = 'flex';
-//   galleryUl.style.justifyContent = 'space-between';
-//   galleryUl.style.listStyle = 'none';
-//   galleryUl.style.padding = 0;
-//   const galleryLi = document.createElement('li');
-//   galleryLi.classList.add('gallery__item');
-//   const imageEl = document.createElement('img');
-//   imageEl.classList.add('gallery__item-image');
-//   imageEl.src = image.url;
-//   imageEl.alt = image.alt;
-//   imageEl.style.width = '360px';
-//   imageEl.style.height = '200px';
-//   galleryLi.appendChild(imageEl);
-//   galleryUl.appendChild(galleryLi);
-// });
-
 // insertAdjacentHTML
 const addImagesToGallery = images.map(image => {
-  const galleryUl = document.querySelector('ul.gallery');
-  galleryUl.insertAdjacentHTML(
-    'afterbegin',
-    `<li><img class = 'gallery__item' src = "${image.url}" alt = "${image.alt}"  width = "360" height = "200" /></li>`,
-  );
-});
+  return `<li><img class = 'gallery__item' src = "${image.url}" alt = "${image.alt}"  width = "360" height = "200" /></li>`;
+}).join('');
+const galleryUl = document.querySelector('ul.gallery');
+galleryUl.insertAdjacentHTML('afterbegin',addImagesToGallery )
+
+
 
 
