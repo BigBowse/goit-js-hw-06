@@ -2,7 +2,7 @@ const input = document.querySelector('#name-input');
 const nameLabel = document.querySelector('#name-output');
 
 function onInputChange(event) {
-    if (input.value === '') {
+    if (!event.currentTarget.value) {
         nameLabel.textContent = 'Anonymous';
     } else {
         nameLabel.textContent = input.value;

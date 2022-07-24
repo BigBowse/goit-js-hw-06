@@ -13,15 +13,8 @@ function onFormSubmit(event) {
     }
 
     if ( email === "" || password === "") {
-        window.alert('Please, fill in all the necessary fields');
+        return window.alert('Please, fill in all the necessary fields');
     }
-
-     // const formData = new FormData(event.currentTarget);
-
-    // formData.forEach((value, name) => {
-    //     console.log('Name', name);
-    //     console.log('Value', value);
-    // })
 
     console.log(formData);
     form.reset();

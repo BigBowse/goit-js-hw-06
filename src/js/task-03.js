@@ -18,7 +18,7 @@ const addImagesToGallery = images.map(image => {
   return `<li><img class = 'gallery__item' src = "${image.url}" alt = "${image.alt}"  width = "360" height = "200" /></li>`;
 }).join('');
 const galleryUl = document.querySelector('ul.gallery');
-galleryUl.insertAdjacentHTML('afterbegin',addImagesToGallery )
+galleryUl.insertAdjacentHTML('afterbegin', addImagesToGallery);
 
 
 
